@@ -19,11 +19,9 @@ const Header = () => {
           <Image src={logo} alt="" width={100} height={100}></Image>
           <div>
             <h2 className="text-3xl mb-2">
-              মোহাম্মদপুর সরকারি উচ্চ বিদ্যালয়, ঢাকা-১২০৭
+              XYZ সরকারি উচ্চ বিদ্যালয়, ঢাকা-১২০৭
             </h2>
-            <h2 className="text-3xl mb-2">
-              Mohammadpur Govt. High School, Dhaka-1207
-            </h2>
+            <h2 className="text-3xl mb-2">XYZ Govt. High School, Dhaka-1207</h2>
           </div>
         </div>
       </div>
