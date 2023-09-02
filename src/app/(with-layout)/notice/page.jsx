@@ -1,9 +1,9 @@
 import React from "react";
-
+import AllNotice from "../../../Components/AllNotice/Allnotice";
 const page = () => {
   return (
     <div>
-      <h2>Notice</h2>
+      <AllNotice></AllNotice>
     </div>
   );
 };

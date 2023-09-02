@@ -11,6 +11,7 @@ const ResultSidebar = () => {
       ? "text-white bg-[#169B81] px-6 py-3 font-bold   "
       : "text-black";
   };
+
   return (
     <div className="w-9/12 mx-auto">
       <h2 className="text-xl font-bold mb-8">All Classes Results </h2>

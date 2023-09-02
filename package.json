@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "20.5.7",
-    "@types/react": "18.2.21"
+    "@types/react": "18.2.21",
+    "daisyui": "^3.6.4"
   }
 }

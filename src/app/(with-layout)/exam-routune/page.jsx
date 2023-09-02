@@ -1,9 +1,9 @@
 import React from "react";
-
+import AllExamRoutune from "../../../Components/AllExamRoutune/AllExamRoutune";
 const page = () => {
   return (
     <div>
-      <h2>Exam routune</h2>
+      <AllExamRoutune></AllExamRoutune>
     </div>
   );
 };

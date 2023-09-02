@@ -1,17 +1,20 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import logo from ".././../../Components/assets/gov logo.png";
 import Image from "next/image";
+
 const Header = () => {
   const pathname = usePathname();
+
   const isLinkActive = (href) => {
-    return pathname === href ? "text-[#169B81] font-bold  " : "text-white";
+    return pathname === href ? "text-[#169B81] font-bold" : "text-white";
   };
+
   return (
-    <div className=" w-9/12 mx-auto ">
-      <div className="  mt-5 mb-10 bg-[#169B81] px-6 py-10  text-white">
+    <div className="w-9/12 mx-auto">
+      <div className="mt-5 mb-10 bg-[#169B81] px-6 py-10 text-white">
         <div className="flex gap-5 items-center">
           <Image src={logo} alt="" width={100} height={100}></Image>
           <div>
@@ -47,12 +50,17 @@ const Header = () => {
         <Link className={`text-xl  ${isLinkActive("/notice")}`} href="/notice">
           Notice
         </Link>
-        <Link
-          className={`text-xl  ${isLinkActive("/all-class-gallery")}`}
-          href="/all-class-gallery"
+
+        <div
+          className={`relative group text-xl ${isLinkActive(
+            "/all-class-gallery"
+          )}`}
         >
-          Gallery
-        </Link>
+          <Link href="/all-class-gallery" className={`cursor-pointer`}>
+            Gallery
+          </Link>
+        </div>
+
         <Link
           className={`text-xl  ${isLinkActive("/all-results")}`}
           href="/all-results"
@@ -63,7 +71,7 @@ const Header = () => {
           className={`text-xl  ${isLinkActive("/exam-routune")}`}
           href="/exam-routune"
         >
-          Exam Routune
+          Exam Routine
         </Link>
         <Link
           className={`text-xl  ${isLinkActive("/dashboard")}`}

@@ -17,10 +17,11 @@ export default function RootLayout({ children }) {
         <div className="mb-8 w-9/12 mx-auto">
           <HeaderNotice></HeaderNotice>
         </div>
-
-        <div>
-          <GalleryHeader></GalleryHeader>
-          <div className="w-9/12 mx-auto">{children}</div>
+        <div className=" w-9/12 mx-auto flex flex-row gap-10 ">
+          <div className="basis-1/4">
+            <GalleryHeader></GalleryHeader>
+          </div>
+          <div className="basis-1/3">{children}</div>
         </div>
       </div>
     </>

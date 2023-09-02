@@ -3,61 +3,87 @@
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import { SiGoogleclassroom } from "react-icons/si";
 const GalleryHeader = () => {
   const pathname = usePathname();
   const isLinkActive = (href) => {
-    return pathname === href
-      ? "text-white bg-[#169B81] px-6 py-3 font-bold  "
-      : "text-black";
+    return pathname === href ? "text-[#169B81]  font-bold  " : "text-black";
   };
   return (
-    <div className="w-9/12 mx-auto">
-      <h2 className="text-xl font-bold mb-5">All Classes Gallery</h2>
-      <div className="flex justify-between mb-5">
-        <span className="inline-block">
+    <div className="bg-gray-50   ">
+      <h2 className="text-xl font-bold  mb-5 bg-[#169B81] px-6 py-3 text-white">
+        All Classes Gallery
+      </h2>
+      <div className="flex flex-col p-5 ">
+        <span className="mb-5 flex items-center gap-3">
+          <SiGoogleclassroom
+            className={`text-xl  ${isLinkActive(
+              "/all-class-gallery/class-six-gallery"
+            )}`}
+          ></SiGoogleclassroom>
           <Link
             href="/all-class-gallery/class-six-gallery"
-            className={`text-xl mb-2 ${isLinkActive(
+            className={`text-xl  ${isLinkActive(
               "/all-class-gallery/class-six-gallery"
             )}`}
           >
             Class Six Gallery
           </Link>
         </span>
-        <span className="inline-block">
+        <span className="mb-5 flex items-center gap-3">
+          <SiGoogleclassroom
+            className={`text-xl mb-b ${isLinkActive(
+              "/all-class-gallery/class-seven-gallery"
+            )}`}
+          ></SiGoogleclassroom>
           <Link
             href="/all-class-gallery/class-seven-gallery"
-            className={`text-xl mb-2 ${isLinkActive(
+            className={`text-xl mb-b ${isLinkActive(
               "/all-class-gallery/class-seven-gallery"
             )}`}
           >
             Class Seven Gallery
           </Link>
         </span>
-        <span className="inline-block">
+        <span className="mb-5 flex items-center gap-3">
+          <SiGoogleclassroom
+            className={`text-xl mb-b ${isLinkActive(
+              "/all-class-gallery/class-eight-gallery"
+            )}`}
+          ></SiGoogleclassroom>
           <Link
             href="/all-class-gallery/class-eight-gallery"
-            className={`text-xl mb-2 ${isLinkActive(
+            className={`text-xl mb-b ${isLinkActive(
               "/all-class-gallery/class-eight-gallery"
             )}`}
           >
             Class Eight Gallery
           </Link>
         </span>
-        <span className="inline-block">
+        <span className="mb-5 flex items-center gap-3">
+          <SiGoogleclassroom
+            className={`text-xl  ${isLinkActive(
+              "/all-class-gallery/class-nine-gallery"
+            )}`}
+          ></SiGoogleclassroom>
           <Link
             href="/all-class-gallery/class-nine-gallery"
-            className={`text-xl mb-2 ${isLinkActive(
+            className={`text-xl  ${isLinkActive(
               "/all-class-gallery/class-nine-gallery"
             )}`}
           >
             Class Nine Gallery
           </Link>
         </span>
-        <span className="inline-block">
+        <span className="mb-5 flex items-center gap-3">
+          <SiGoogleclassroom
+            className={`text-xl font-bold mb-b ${isLinkActive(
+              "/all-class-gallery/class-ten-gallery"
+            )}`}
+          ></SiGoogleclassroom>
           <Link
             href="/all-class-gallery/class-ten-gallery"
-            className={`text-xl mb-2 ${isLinkActive(
+            className={`text-xl mb-b ${isLinkActive(
               "/all-class-gallery/class-ten-gallery"
             )}`}
           >
