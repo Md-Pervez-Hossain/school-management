@@ -1,10 +1,10 @@
+import Link from "next/link";
 import React from "react";
 import { BiNews } from "react-icons/bi";
 const ShowNotice = () => {
   return (
-    <div className=" bg-gray-50 h-[350px]">
+    <div className=" bg-gray-50 ">
       <h2 className="text-xl mb-5 font-bold bg-[#FFB400] p-3 text-white">
-        {" "}
         Notice Board
       </h2>
       <div className="p-3">

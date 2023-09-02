@@ -1,22 +1,32 @@
 import Image from "next/image";
 import React from "react";
+import Princial from "../../Components/assets/teacher.jpg";
+import Link from "next/link";
 
 const Sovapoti = () => {
   return (
-    <div className="bg-gray-50">
-      <Image
-        width={250}
-        height={200}
-        src="https://images.pexels.com/photos/5427659/pexels-photo-5427659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt=""
-        layout="responsive"
-        className="mb-2"
-      ></Image>
-      <div className=" p-3">
-        <h2 className=" font-bold text-[#169B81]">Abdur Rohim</h2>
-        <p>Chairman</p>
-        <p>Mohammadpur Govt. High School</p>
-        <button className="text-[#FFB400]">Read More </button>
+    <div>
+      <div className="grid grid-cols-2 gap-2 ">
+        <div>
+          <Image
+            width={400}
+            height={200}
+            src={Princial}
+            alt=""
+            layout="responsive"
+            className="mb-2"
+          ></Image>
+        </div>
+        <div className=" p-3">
+          <p>
+            মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, যশোর জনগণের দোরগোড়ায় শিক্ষা
+            সেবা পৌঁছে দেবার লক্ষ্যে যাবতীয় কার্যাদী সম্পাদনে ...{" "}
+            <Link href="/about">
+              {" "}
+              <button className="text-[#FFB400]">Read More</button>
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

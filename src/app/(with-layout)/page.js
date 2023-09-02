@@ -6,60 +6,114 @@ import Sovapoti from "../../Components/Sovapoti/Sovapoti.jsx";
 import Footer from "./Footer/Footer.jsx";
 import About from "../../Components/About/About.jsx";
 import HeaderNotice from "./HeaderNotice/HeaderNotice.jsx";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import StudentInformation from "../../Components/StudentInformation/StudentInformation.jsx";
+import TeachersInformation from "../../Components/TeachersInformation/TeachersInformation.jsx";
+import Download from "../../Components/Download/Download.jsx";
+import AcademicInformation from "../../Components/AcademicInformation/AcademicInformation.jsx";
+import OfficialLink from "../../Components/OficialLink/OficialLink.jsx";
+import ImportantLinks from "../../Components/ImportantLinks/ImportantLinks.jsx";
+import Link from "next/link.js";
 export default function Home() {
   return (
     <main className="w-9/12 mx-auto">
       <HeaderNotice></HeaderNotice>
-      <div className="grid grid-cols-3 gap-10 my-16 ">
-        <div className="col-span-2">
-          <Slider></Slider>
-          <div className=" mt-8">
-            <h2 className="text-xl font-bold mb-2 text-[#169B81]">
-              Our Teachers
-            </h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-              laudantium fugit, sint error eligendi deleniti ratione voluptates
-              quasi, obcaecati quas
-            </p>
-            <p className="mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-              laudantium fugit, sint error eligendi deleniti ratione voluptates
-              quasi, obcaecati quas necessitatibus pariatur ducimus odio nulla
-              tempora assumenda fuga
-            </p>
+      <div className="grid grid-cols-4 gap-10 my-16 ">
+        <div className="col-span-3">
+          <div>
+            <Slider></Slider>
           </div>
-          <div className="grid grid-cols-3 gap-10 mt-8">
-            <Chairman></Chairman>
-            <Sovapoti></Sovapoti>
-            <Chairman></Chairman>
-            <Sovapoti></Sovapoti>
-            <Chairman></Chairman>
-            <Sovapoti></Sovapoti>
+          <div>
+            <p className="bg-[#169B81] px-4 py-2 mt-5 text-white mb-5">
+              School History
+            </p>
+            <About></About>
           </div>
-          <div className="flex justify-end  gap-5 text-end mt-8">
-            <button>
-              <div className="flex gap-2 items-center">
-                <FaArrowLeft></FaArrowLeft>
+          <div className="grid grid-cols-2 gap-5 mt-5">
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 text-white mb-5">
+                Principal Words
+              </p>
+              <Chairman></Chairman>
+            </div>
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 text-white mb-5">
+                Principal Words
+              </p>
+              <Sovapoti></Sovapoti>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-5">
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 mt-5 text-white mb-5">
+                Student Information
+              </p>
+              <div>
+                <StudentInformation></StudentInformation>
               </div>
-            </button>
-            <button>
-              <div className="flex gap-2 items-center">
-                <FaArrowRight></FaArrowRight>
+            </div>
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 mt-5 text-white mb-5">
+                Teachers Information
+              </p>
+              <div>
+                <TeachersInformation></TeachersInformation>
               </div>
-            </button>
+            </div>
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 mt-5 text-white mb-5">
+                Downloads
+              </p>
+              <div>
+                <Download></Download>
+              </div>
+            </div>
+            <div>
+              <p className="bg-[#169B81] px-4 py-2 mt-5 text-white mb-5">
+                Academic Information
+              </p>
+              <div>
+                <AcademicInformation></AcademicInformation>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-span-1">
-          <div>
+          <div className="mb-5">
             <ShowNotice></ShowNotice>
           </div>
-          <div className="my-10">
+          <div className="flex flex-col">
+            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+              ভর্তি তথ্য
+            </Link>
+            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+              ভর্তি ফরম
+            </Link>
+            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+              ফটোগ্যালারী
+            </Link>
+            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+              ভিডিও গ্যালারী
+            </Link>
+          </div>
+
+          <div className="my-5">
+            <p className="bg-[#FFB400] px-4 py-2 text-white mb-5">
+              Principal Words
+            </p>
             <HeadMaster></HeadMaster>
           </div>
-          <div>
-            <About></About>
+          <div className="my-5">
+            <p className="bg-[#FFB400] px-4 py-2 text-white mb-5">
+              Oficial Links
+            </p>
+            <OfficialLink></OfficialLink>
+          </div>
+
+          <div className="my-5">
+            <p className="bg-[#FFB400] px-4 py-2 text-white mb-5">
+              Important Links
+            </p>
+            <ImportantLinks></ImportantLinks>
           </div>
         </div>
       </div>
