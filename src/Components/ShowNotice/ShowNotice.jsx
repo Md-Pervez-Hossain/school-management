@@ -8,19 +8,21 @@ const ShowNotice = () => {
         Notice Board
       </h2>
       <div className="p-3">
-        <div className="flex items-center gap-3 mb-2">
-          <BiNews></BiNews> <span>Notice One</span>
-        </div>
+        <marquee direction="up" scrollamount="5">
+          <div className="flex items-center gap-3 mb-2">
+            <BiNews></BiNews> <span>Notice One</span>
+          </div>
 
-        <div className="flex items-center gap-3 mb-2">
-          <BiNews></BiNews> <span>Notice Two</span>
-        </div>
-        <div className="flex items-center gap-3 mb-2">
-          <BiNews></BiNews> <span>Notice Three</span>
-        </div>
-        <div className="flex items-center gap-3 mb-2">
-          <BiNews></BiNews> <span>Notice Four</span>
-        </div>
+          <div className="flex items-center gap-3 mb-2">
+            <BiNews></BiNews> <span>Notice Two</span>
+          </div>
+          <div className="flex items-center gap-3 mb-2">
+            <BiNews></BiNews> <span>Notice Three</span>
+          </div>
+          <div className="flex items-center gap-3 mb-2">
+            <BiNews></BiNews> <span>Notice Four</span>
+          </div>
+        </marquee>
       </div>
     </div>
   );
