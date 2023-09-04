@@ -15,13 +15,16 @@ const Header = () => {
   return (
     <div className="w-9/12 mx-auto">
       <div className="mt-5 mb-10 bg-[#169B81] px-6 py-10 text-white">
-        <div className="flex gap-5 items-center">
-          <Image src={logo} alt="" width={100} height={100}></Image>
-          <div>
+        <div className="  flex justify-center gap-5 items-center">
+          {/* <Image src={logo} alt="" width={100} height={100}></Image> */}
+          <div className="text-center">
             <h2 className="text-3xl mb-2">
-              XYZ সরকারি উচ্চ বিদ্যালয়, ঢাকা-১২০৭
+              শিরগ্রাম বহুমুখী স্কুল উচ্চ বিদ্যালয়
             </h2>
-            <h2 className="text-3xl mb-2">XYZ Govt. High School, Dhaka-1207</h2>
+            <p>স্থাপিতঃ ১৯৫২ ইং </p>
+            <p>পূনঃ নির্মাণঃ ২০০১ </p>
+            <p>বাস্তবায়নেঃ ফ্যাসিলিটিজ ডিপার্টমেন্ট ।</p>
+            <p>উপজেলাঃ আলফাডাঙ্গা, জেলাঃ ফরিদপুর । </p>
           </div>
         </div>
       </div>
