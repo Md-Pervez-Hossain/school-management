@@ -1,55 +1,32 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
-import { MdOutlineNotifications } from "react-icons/md";
 import OficialLink from "../OficialLink/OficialLink";
 import ImportantLinks from "../ImportantLinks/ImportantLinks";
-
-const Allnotice = () => {
+import { MdOutlineNotifications } from "react-icons/md";
+const AllNotice = ({ data }) => {
+  console.log(data?.notice);
   return (
     <div className="w-9/12 mx-auto my-16">
       <div className="my-10 grid grid-cols-3 gap-10">
         <div className="col-span-2">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <span>
-                <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
-              </span>
-              <Link href="/">
-                আগামী নির্বাচনী পরীক্ষা ৩১ মার্চের পরিবর্তে ৫ জুন অনুষ্ঠিত হবে
-              </Link>
-            </div>
-            <div className="flex items-center gap-3 mb-5">
-              {" "}
-              <span>
-                <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
-              </span>
-              <Link href="/">আগামী ১২ এপ্রিল বিজ্ঞান বিভাগের পরীক্ষা</Link>
-            </div>
-            <div className="flex items-center gap-3 mb-5">
-              {" "}
-              <span>
-                <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
-              </span>
-              <Link href="/">
-                আগামী ৩১ মার্চের মধ্যে সকল ফি পরিশোধ করতে হবে
-              </Link>
-            </div>
-            <div className="flex items-center gap-3 mb-5">
-              {" "}
-              <span>
-                <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
-              </span>
-              <Link href="/">
-                স্কুলের ভিতর মোবাইল ব্যবহার করা সম্পূর্ণ নিষেধ
-              </Link>
-            </div>
-            <div className="flex items-center gap-3 mb-5">
-              {" "}
-              <span>
-                <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
-              </span>
-              <Link href="/">আমাদের শিক্ষা প্রতিষ্ঠানে আপনাদের স্বাগতম</Link>
-            </div>
+            {data?.notice?.map((notice) => {
+              return (
+                <>
+                  <div className="flex items-center gap-3 mb-5">
+                    {" "}
+                    <span>
+                      <MdOutlineNotifications className="text-2xl font-bold"></MdOutlineNotifications>
+                    </span>
+                    <Link href={`/single-notice/${notice._id}`}>
+                      {`${notice.title} ... `}
+                    </Link>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
         <div className="col-span-1">
@@ -86,4 +63,4 @@ const Allnotice = () => {
   );
 };
 
-export default Allnotice;
+export default AllNotice;

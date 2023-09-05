@@ -1,11 +1,12 @@
 import React from "react";
+import AddNotice from "../../../Components/Dashboard/AddNotice/AddNotice";
 
-const page = () => {
+const NoticePage = async () => {
   return (
     <div>
-      <h2>Exam Rountune</h2>
+      <AddNotice></AddNotice>
     </div>
   );
 };
 
-export default page;
+export default NoticePage;
