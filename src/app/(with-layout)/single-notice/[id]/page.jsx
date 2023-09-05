@@ -12,7 +12,7 @@ async function getAllData() {
   return data;
 }
 
-const page = async ({ params }) => {
+const SingleNoticePage = async ({ params }) => {
   const { id } = params;
   async function getData() {
     const res = await fetch(`http://localhost:3000/api/add-notice/${id}`, {
@@ -34,4 +34,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default SingleNoticePage;

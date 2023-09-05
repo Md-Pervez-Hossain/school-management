@@ -1,9 +1,10 @@
 import React from "react";
+import AddRoutune from "../../../Components/Dashboard/AddRoutune/AddRoutune";
 
 const page = () => {
   return (
     <div>
-      <h2>Exam routune</h2>
+      <AddRoutune></AddRoutune>
     </div>
   );
 };

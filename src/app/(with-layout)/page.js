@@ -82,7 +82,10 @@ export default function Home() {
             <ShowNotice></ShowNotice>
           </div>
           <div className="flex flex-col">
-            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+            <Link
+              href="/student-admission-information"
+              className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+            >
               ভর্তি তথ্য
             </Link>
             <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">

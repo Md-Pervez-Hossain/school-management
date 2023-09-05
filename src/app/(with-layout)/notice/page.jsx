@@ -11,7 +11,7 @@ async function getData() {
   }
   return data;
 }
-const page = async () => {
+const AllNoticePage = async () => {
   const data = await getData();
   console.log("all notice", data);
   return (
@@ -21,4 +21,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default AllNoticePage;
