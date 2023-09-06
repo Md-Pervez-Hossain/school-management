@@ -9,7 +9,7 @@ const StudentInformation = () => {
         <Link href="/">2 . ছাত্রছাত্রীর আসন সংখ্যা</Link>
         <Link href="/notice"> 3 . নোটিশ</Link>
         <Link href="/exam-routune"> 4 . রুটিন</Link>
-        <Link href="/"> 5 . কৃতি শিক্ষার্থী</Link>
+        <Link href="/all-class-gallery"> 5 . কৃতি শিক্ষার্থী</Link>
       </div>
     </div>
   );

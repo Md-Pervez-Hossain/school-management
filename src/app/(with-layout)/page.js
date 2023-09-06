@@ -91,10 +91,16 @@ export default function Home() {
             <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
               ভর্তি ফরম
             </Link>
-            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+            <Link
+              href="/all-class-gallery"
+              className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+            >
               ফটোগ্যালারী
             </Link>
-            <Link href="/" className="bg-[#169B81] mb-3 px-4 py-2 text-white">
+            <Link
+              href="/all-class-gallery"
+              className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+            >
               ভিডিও গ্যালারী
             </Link>
           </div>

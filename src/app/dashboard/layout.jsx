@@ -8,11 +8,11 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <div className=" w-11/12 mx-auto py-10 grid grid-cols-5 gap-10">
-      <div className="col-span-1">
+    <div className=" grid grid-cols-5 gap-8  ">
+      <div className="col-span-1 bg-gray-100 min-h-screen p-10 ">
         <Sidebar></Sidebar>
       </div>
-      <div className="col-span-4">{children}</div>
+      <div className="col-span-4 px-8 py-16 ">{children}</div>
     </div>
   );
 }

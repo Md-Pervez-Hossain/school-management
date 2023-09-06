@@ -1,9 +1,9 @@
 import React from "react";
-
+import AddGallery from "../../../Components/Dashboard/AddGallery/AddGallery";
 const page = () => {
   return (
     <div>
-      <h2>Gallery</h2>
+      <AddGallery></AddGallery>
     </div>
   );
 };

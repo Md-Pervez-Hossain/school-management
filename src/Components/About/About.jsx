@@ -37,6 +37,32 @@ const About = () => {
               </div>
               <div className="col-span-1">
                 <ShowNotice></ShowNotice>
+                <div className="flex flex-col mt-5">
+                  <Link
+                    href="/student-admission-information"
+                    className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+                  >
+                    ভর্তি তথ্য
+                  </Link>
+                  <Link
+                    href="/"
+                    className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+                  >
+                    ভর্তি ফরম
+                  </Link>
+                  <Link
+                    href="/all-class-gallery"
+                    className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+                  >
+                    ফটোগ্যালারী
+                  </Link>
+                  <Link
+                    href="/all-class-gallery"
+                    className="bg-[#169B81] mb-3 px-4 py-2 text-white"
+                  >
+                    ভিডিও গ্যালারী
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
