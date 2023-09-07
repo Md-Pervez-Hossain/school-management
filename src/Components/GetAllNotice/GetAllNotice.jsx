@@ -5,7 +5,7 @@ import OficialLink from "../OficialLink/OficialLink";
 import ImportantLinks from "../ImportantLinks/ImportantLinks";
 import { MdOutlineNotifications } from "react-icons/md";
 
-const AllNotice = ({ data }) => {
+const GetAllNotice = ({ data }) => {
   return (
     <div className="w-9/12 mx-auto my-16">
       <div className="my-10 grid grid-cols-3 gap-10">
@@ -61,4 +61,4 @@ const AllNotice = ({ data }) => {
     </div>
   );
 };
-export default AllNotice;
+export default GetAllNotice;

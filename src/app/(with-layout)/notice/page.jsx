@@ -1,4 +1,4 @@
-import { AllNotice } from "../../../Components/AllNotice/AllNotice.jsx";
+import GetAllNotice from "../../../Components/GetAllNotice/GetAllNotice";
 async function getData() {
   const res = await fetch("http://localhost:3000/api/add-notice", {
     cache: "no-store",
@@ -14,7 +14,7 @@ const AllNoticePage = async () => {
   console.log("all notice", data);
   return (
     <div>
-      <AllNotice data={data}></AllNotice>
+      <GetAllNotice></GetAllNotice>
     </div>
   );
 };
