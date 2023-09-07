@@ -4,9 +4,12 @@ import SingleStudentGallery from "../../../../Components/SingleStudentGallery/Si
 const page = async ({ params }) => {
   const { id } = params;
   async function getData() {
-    const res = await fetch(`http://localhost:3000/api/add-gallery/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://bd-schools.vercel.app/api/add-gallery/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
     const data = await res.json();
     if (!res.ok) {
       throw new Error("Failed To Fetch");

@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import AllStudentGallery from "../../Components/AllStudentGallery/AllStudentGallery";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/add-gallery", {
+  const res = await fetch("https://bd-schools.vercel.app/api/add-gallery", {
     cache: "no-store",
   });
   const data = await res.json();
@@ -11,8 +12,8 @@ async function getData() {
   }
   return data;
 }
-const page = async () => {
-  const data = await getData();
+const AllClass = () => {
+  const data = getData();
 
   return (
     <div>
@@ -21,4 +22,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default AllClass;

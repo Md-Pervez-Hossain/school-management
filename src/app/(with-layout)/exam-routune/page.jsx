@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import AllExamRoutune from "../../../Components/AllExamRoutune/AllExamRoutune";
 async function getClassRoutuneData() {
-  const res = await fetch("http://localhost:3000/api/add-routune", {
+  const res = await fetch("https://bd-schools.vercel.app/api/add-routune", {
     cache: "no-store",
   });
   const data = await res.json();
@@ -10,8 +11,8 @@ async function getClassRoutuneData() {
   }
   return data;
 }
-const page = async () => {
-  const data = await getClassRoutuneData();
+const ExamRoutine = () => {
+  const data = getClassRoutuneData();
   console.log(data);
   return (
     <div>
@@ -20,4 +21,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default ExamRoutine;
