@@ -1,6 +1,4 @@
-import React from "react";
-import AllNotice from "../../../Components/AllNotice/AllNotice";
-
+import AllNotice from "../../../Components/AllNotice/AllNotice.jsx";
 async function getData() {
   const res = await fetch("http://localhost:3000/api/add-notice", {
     cache: "no-store",
