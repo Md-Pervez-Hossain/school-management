@@ -17,7 +17,7 @@ const AllStudentGallery = ({ data }) => {
   ];
 
   // Filter the student gallery data based on the selected class
-  const filteredGallery = data?.studentGallery.filter((gallery) => {
+  const filteredGallery = data?.studentGallery?.filter((gallery) => {
     if (!studentClass) {
       // If no class is selected, show all galleries
       return true;
