@@ -15,11 +15,7 @@ async function getData() {
 const AllClass = () => {
   const data = getData();
 
-  return (
-    <div>
-      <AllStudentGallery data={data}></AllStudentGallery>
-    </div>
-  );
+  return <div>{/* <AllStudentGallery data={data}></AllStudentGallery> */}</div>;
 };
 
 export default AllClass;
