@@ -9,14 +9,14 @@ async function getData() {
   }
   return data;
 }
-const page = async () => {
+const AllNoticePage = async () => {
   const data = await getData();
   console.log("all notice", data);
   return (
     <div>
-      <GetAllNotice data={data}></GetAllNotice>
+      <GetAllNotice></GetAllNotice>
     </div>
   );
 };
 
-export default page;
+export default AllNoticePage;

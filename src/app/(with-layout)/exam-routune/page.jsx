@@ -1,3 +1,4 @@
+import React from "react";
 import AllExamRoutune from "../../../Components/AllExamRoutune/AllExamRoutune";
 async function getClassRoutuneData() {
   const res = await fetch("http://localhost:3000/api/add-routune", {
