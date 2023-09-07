@@ -1,6 +1,6 @@
 import GetAllNotice from "../../../Components/GetAllNotice/GetAllNotice";
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/add-notice", {
+  const res = await fetch("https://bd-schools.vercel.app/api/add-notice", {
     cache: "no-store",
   });
   const data = await res.json();

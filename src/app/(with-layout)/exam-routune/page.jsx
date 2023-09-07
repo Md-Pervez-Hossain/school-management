@@ -1,7 +1,7 @@
 import React from "react";
 import AllExamRoutune from "../../../Components/AllExamRoutune/AllExamRoutune";
 async function getClassRoutuneData() {
-  const res = await fetch("http://localhost:3000/api/add-routune", {
+  const res = await fetch("https://bd-schools.vercel.app/api/add-routune", {
     cache: "no-store",
   });
   const data = await res.json();
