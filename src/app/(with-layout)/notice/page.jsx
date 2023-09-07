@@ -1,3 +1,4 @@
+"use client";
 import GetAllNotice from "../../../Components/GetAllNotice/GetAllNotice";
 async function getData() {
   const res = await fetch("https://bd-schools.vercel.app/api/add-notice", {

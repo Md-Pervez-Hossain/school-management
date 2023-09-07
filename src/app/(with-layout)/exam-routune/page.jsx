@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AllExamRoutune from "../../../Components/AllExamRoutune/AllExamRoutune";
 async function getClassRoutuneData() {

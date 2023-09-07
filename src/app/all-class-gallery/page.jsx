@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AllStudentGallery from "../../Components/AllStudentGallery/AllStudentGallery";
 
