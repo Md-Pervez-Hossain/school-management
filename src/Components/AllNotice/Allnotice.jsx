@@ -61,5 +61,4 @@ const AllNotice = ({ data }) => {
     </div>
   );
 };
-
 export default AllNotice;
