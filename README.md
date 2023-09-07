@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [https://bd-schools.vercel.app](https://bd-schools.vercel.app) with your browser to see the result.
+Open [https://school-management-ten.vercel.app](https://school-management-ten.vercel.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

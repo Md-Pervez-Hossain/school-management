@@ -5,7 +5,7 @@ const page = async ({ params }) => {
   const { id } = params;
   async function getData() {
     const res = await fetch(
-      `https://bd-schools.vercel.app/api/add-gallery/${id}`,
+      `https://school-management-ten.vercel.app/api/add-gallery/${id}`,
       {
         cache: "no-store",
       }
