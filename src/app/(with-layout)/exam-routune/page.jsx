@@ -11,8 +11,8 @@ async function getClassRoutuneData() {
   }
   return data;
 }
-const ExamRoutine = async () => {
-  const data = await getClassRoutuneData();
+const ExamRoutine = () => {
+  const data = getClassRoutuneData();
   console.log(data);
   return (
     <div>

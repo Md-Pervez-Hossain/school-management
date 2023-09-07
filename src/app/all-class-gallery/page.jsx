@@ -12,8 +12,8 @@ async function getData() {
   }
   return data;
 }
-const AllClass = async () => {
-  const data = await getData();
+const AllClass = () => {
+  const data = getData();
 
   return (
     <div>

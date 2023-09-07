@@ -10,8 +10,8 @@ async function getData() {
   }
   return data;
 }
-const AllNoticePage = async () => {
-  const data = await getData();
+const AllNoticePage = () => {
+  const data = getData();
   console.log("all notice", data);
   return (
     <div>
