@@ -11,7 +11,7 @@ async function getData() {
   }
   return data;
 }
-const page = async () => {
+const AllClass = async () => {
   const data = await getData();
 
   return (
@@ -21,4 +21,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default AllClass;

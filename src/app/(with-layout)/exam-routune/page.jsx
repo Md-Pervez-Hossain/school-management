@@ -10,7 +10,7 @@ async function getClassRoutuneData() {
   }
   return data;
 }
-const page = async () => {
+const ExamRoutine = async () => {
   const data = await getClassRoutuneData();
   console.log(data);
   return (
@@ -20,4 +20,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default ExamRoutine;
